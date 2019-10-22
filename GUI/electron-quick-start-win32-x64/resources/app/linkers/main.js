@@ -1,6 +1,6 @@
 var ps = require("python-shell")
 
-function addition() {
+function addition(fn) {
 var options = {
 		mode: 'text',
     	scriptPath : '../../Engine/',
@@ -8,7 +8,7 @@ var options = {
 
   ps.PythonShell.run('addition.py', options, function (err, results) {
     if (err) throw err;
-    console.log(results[0]);
+    fn(results[0]);
   });
 
 } // end of the function definition addition
