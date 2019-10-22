@@ -63,13 +63,6 @@
 </head>
 
 <body>
-	<div class="container">
-      <ul class="progressbar">
-          <li class="active">Step 1</li>
-          <li class="active">Step 2</li>
-          <li>Step 3</li>
-  	  </ul>
-  </div>
 	<div class="container" style="margin-top: 2em">
 		<button onclick="javascript:introJs().start();">Give me a Demo!</button>
 		<form data-step="1" data-intro="Hey! This is another form.">
@@ -90,7 +83,14 @@
       </div>
       </form>
 		</form>
-    <button onclick="location.href='screen_4.html'">Go to next page!</button>
+    <button class="btn btn-info" onclick="location.href='screen_4.html'">Go to next page!</button>
 	</div>
+  <div class="container">
+      <ul class="progressbar">
+          <li class="active">Step 1</li>
+          <li class="active">Step 2</li>
+          <li>Step 3</li>
+      </ul>
+  </div>
 </body>
 </html>

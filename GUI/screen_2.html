@@ -62,6 +62,26 @@
 	</style>
 </head>
 <body>
+	<div class="container" style="margin-top: 2em">
+		<form data-step="1" data-intro="Hey! Fill the first form. This is about file input!">
+	  	<div class="form-group">
+	    	<label for="exampleFormControlFile1">Example file input</label>
+	    	<input type="file" class="form-control-file" id="exampleFormControlFile1">
+	  	</div>
+		</form>
+
+		<form data-step="1" data-intro="Hey! Fill the first form. This is about file input!">
+	  	<div class="form-group">
+	    	<label for="exampleFormControlFolder">Example folder input</label>
+	    	<input type="file" class="form-control-folder" id="exampleFormControlFolder" webkitdirectory directory multiple>
+	  	</div>
+		</form>
+		<button class="btn btn-info" onclick="addition()">Perform some action!</button>
+		</br>
+		</br>
+		<input id="checkbox" type="checkbox" onclick="if (!document.getElementById('checkbox').checked) { document.getElementById('next').disabled = true; } else { document.getElementById('next').disabled = false; }">To go to next page, click here.<br>
+		<button id="next" disabled="disabled" class="btn btn-info" onclick="location.href='screen_3.html'">Go to next page!</button>
+	</div>
 	<div class="container">
       <ul class="progressbar">
           <li class="active">Step 1</li>
@@ -69,25 +89,5 @@
           <li>Step 3</li>
   	  </ul>
   	</div>
-	<div class="container" style="margin-top: 2em">
-		<button onclick="javascript:introJs().start();">Give me a Demo!</button>
-		<form data-step="1" data-intro="Hey! Fill the first form. This is about file input!">
-	  	<div class="form-group">
-	    	<label for="exampleFormControlFile1">Example file input #1</label>
-	    	<input type="file" class="form-control-file" id="exampleFormControlFile1">
-	  	</div>
-		</form>
-
-		<form data-step="1" data-intro="Hey! Fill the first form. This is about file input!">
-	  	<div class="form-group">
-	    	<label for="exampleFormControlFile1">Example file input #2</label>
-	    	<input type="file" class="form-control-file" id="exampleFormControlFile1">
-	  	</div>
-		</form>
-
-		<button>Go for it!</button>
-		<button onclick="location.href='screen_3.html'">Go to next page!</button>
-		</form>
-	</div>
 </body>
 </html>
